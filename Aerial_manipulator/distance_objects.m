@@ -1,0 +1,15 @@
+function [V] = distance_objects(h, obs)
+%UNTITLED2 Summary of this function goes here
+%   Detailed explanation goes here
+i = size(obs, 1);
+j = size(obs, 2);
+number = size(obs, 3);
+V = [];
+
+for k = 1:1:number
+    aux_norm = h - obs(:,1,k);
+    aux = norm(aux_norm,2);
+    V = [V;aux];
+end
+end
+

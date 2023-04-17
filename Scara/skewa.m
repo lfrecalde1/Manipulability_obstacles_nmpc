@@ -1,0 +1,9 @@
+function [S] = skewa(vec)
+%UNTITLED8 Summary of this function goes here
+%   Detailed explanation goes here
+S = [0, -vec(6), vec(5), vec(1);...
+     vec(6), 0, -vec(4), vec(2);...
+     -vec(5), vec(4), 0, vec(3);...
+     0, 0, 0, 0];
+end
+
